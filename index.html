@@ -5,13 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TCCA Archives</title>
 <style>
-/* === Global Styles === */
 body {
     margin:0;
     font-family:'Courier New', monospace;
     display:flex;
     background:#0a0a0a;
-    color:#00ff00; /* Treetops Green */
+    color:#cfcfcf;
     height:100vh;
     overflow:hidden;
 }
@@ -21,43 +20,47 @@ header {
     top:0;
     left:0;
     width:100%;
-    height:80px;
-    background:#003300;
+    height:120px;
+    background:maroon;
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    font-size:0.85em;
-    color:#00ff00;
     z-index:100;
     box-shadow:0 3px 6px rgba(0,0,0,0.5);
-    padding-top:5px;
 }
 
-header .ascii {
+header pre {
+    color:#00ff00;
     font-family:'Courier New', monospace;
-    font-size:0.9em;
-    white-space: pre;
+    margin:0;
     line-height:0.8em;
     text-align:center;
 }
 
+header .subtitle {
+    color:#ffffff;
+    font-size:1.2em;
+    margin-top:4px;
+}
+
 nav {
     width:280px;
-    background:#001a00;
-    padding-top:90px;
+    background:#1f1f1f;
+    padding-top:130px;
     position:fixed;
     height:100%;
     overflow-y:auto;
-    border-right:1px solid #004400;
+    border-right:1px solid #330000;
 }
 
 nav h2 {
     text-align:center;
     font-size:1.3em;
     padding-bottom:10px;
-    border-bottom:1px solid #004400;
+    border-bottom:1px solid #550000;
     margin-bottom:10px;
+    color:#ff6666;
 }
 
 nav button {
@@ -66,7 +69,7 @@ nav button {
     margin:5px auto;
     padding:10px;
     border:none;
-    background:#002200;
+    background:#2c2c2c;
     color:#00ff00;
     text-align:left;
     font-size:0.95em;
@@ -76,22 +79,24 @@ nav button {
 }
 
 nav button:hover {
-    background:#004400;
+    background:#550000;
+    color:#fff;
     font-weight:bold;
 }
 
 nav button.active {
-    background:#006600;
-    color:#fff;
+    background:maroon;
+    color:#00ff00;
     font-weight:bold;
 }
 
 main {
     margin-left:280px;
-    padding:100px 30px 30px 30px;
+    padding:140px 30px 30px 30px;
     overflow-y:auto;
     flex:1;
     scroll-behavior:smooth;
+    color:#cfcfcf;
 }
 
 .page {
@@ -105,7 +110,7 @@ main {
 .section {
     margin-bottom:16px;
     padding-bottom:4px;
-    border-bottom:1px solid #004400;
+    border-bottom:1px solid #330000;
 }
 
 .section-title {
@@ -118,70 +123,69 @@ main {
 <body>
 
 <header>
-<div class="ascii">
-  _____ _______ _______ _____       _____ _______        _____ _      _      ____   _____ _____ _______   _______ _____  
- |_   _|__   __|__   __|  __ \     / ____|__   __|      |_   _| |    | |    / __ \ / ____/ ____|__   __| |__   __|  __ \ 
-   | |    | |     | |  | |__) |   | |       | |           | | | |    | |   | |  | | |   | |       | |       | |  | |__) |
-   | |    | |     | |  |  _  /    | |       | |           | | | |    | |   | |  | | |   | |       | |       | |  |  _  / 
-  _| |_   | |     | |  | | \ \    | |____   | |          _| |_| |____| |___| |__| | |___| |____   | |       | |  | | \ \ 
- |_____|  |_|     |_|  |_|  \_\    \_____|  |_|         |_____|______|______\____/ \_____\_____|  |_|       |_|  |_|  \_\
-</div>
-<div>Treetops Cryptid Containment Archives</div>
+<pre>
+████████╗ ██████╗ ██████╗  █████╗
+╚══██╔══╝██╔═══██╗██╔══██╗██╔══██╗
+   ██║   ██║   ██║██████╔╝███████║
+   ██║   ██║   ██║██╔═══╝ ██╔══██║
+   ██║   ╚██████╔╝██║     ██║  ██║
+   ╚═╝    ╚═════╝ ╚═╝     ╚═╝  ╚═╝
+</pre>
+<div class="subtitle">Treetops Cryptid Containment Archives</div>
 </header>
 
 <nav>
-  <h2>Archives</h2>
-  <button onclick="showPage('TA38282')" id="btn-TA38282">TA-38282</button>
-  <button onclick="showPage('TA2839237')" id="btn-TA2839237">TA-2839237</button>
-  <button onclick="showPage('TA101838')" id="btn-TA101838">TA-101838</button>
-  <button onclick="showPage('TA984302')" id="btn-TA984302">TA-984302</button>
-  <button onclick="showPage('TA477592')" id="btn-TA477592">TA-477592</button>
-  <button onclick="showPage('TA892104')" id="btn-TA892104">TA-892104</button>
-  <button onclick="showPage('TA560193')" id="btn-TA560193">TA-560193</button>
-  <button onclick="showPage('TA731920')" id="btn-TA731920">TA-731920</button>
-  <button onclick="showPage('TA119384')" id="btn-TA119384">TA-119384</button>
+<h2>Archives</h2>
+<button onclick="showPage('TA38282')" id="btn-TA38282">TA-38282</button>
+<button onclick="showPage('TA2839237')" id="btn-TA2839237">TA-2839237</button>
+<button onclick="showPage('TA101838')" id="btn-TA101838">TA-101838</button>
+<button onclick="showPage('TA984302')" id="btn-TA984302">TA-984302</button>
+<button onclick="showPage('TA477592')" id="btn-TA477592">TA-477592</button>
+<button onclick="showPage('TA892104')" id="btn-TA892104">TA-892104</button>
+<button onclick="showPage('TA560193')" id="btn-TA560193">TA-560193</button>
+<button onclick="showPage('TA731920')" id="btn-TA731920">TA-731920</button>
+<button onclick="showPage('TA119384')" id="btn-TA119384">TA-119384</button>
+<button onclick="showPage('TA555555')" id="btn-TA555555">TA-555555</button>
 </nav>
 
 <main>
-<!-- ===================== TAs go here ===================== -->
-<!-- Example for TA-38282 -->
+<!-- Safe Example -->
 <div id="TA38282" class="page">
   <div class="section"><div class="section-title">DESIGNATION</div>TA-38282</div>
   <div class="section"><div class="section-title">CLASS</div>S (Safe)</div>
+  <div class="section"><div class="section-title">SUBCATEGORY</div>—</div>
   <div class="section"><div class="section-title">ALIASES</div>The Whispering Lantern</div>
-  <div class="section"><div class="section-title">ORIGIN</div>Discovered in forest ruins; emits soft, unintelligible whispers.</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Forest ruins; emits soft, unintelligible whispers.</div>
   <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small lantern-shaped entity; glows faint green; floats silently in air.</div>
   <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans slowly; disappears when approached.</div>
   <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Minor curiosity and fascination; no harm recorded.</div>
-  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Contained in clear glass dome; harmless to personnel.</div>
-  <div class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices, causing minor flickers.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Clear glass dome; harmless.</div>
+  <div class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices causing minor flickers.</div>
 </div>
 
-<!-- Repeat for other TAs with updated classes -->
-
+<!-- Ketemmu Example -->
 <div id="TA119384" class="page">
   <div class="section"><div class="section-title">DESIGNATION</div>TA-119384</div>
-  <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+  <div class="section"><div class="section-title">CLASS</div>Memmu</div>
+  <div class="section"><div class="section-title">SUBCATEGORY</div>—</div>
   <div class="section"><div class="section-title">ALIASES</div>The Imprisoned God / The Harbinger</div>
-  <div class="section"><div class="section-title">ORIGIN</div>Contained within Pandora's Box artifact; entity of unimaginable power. Event known as "The Rapture" will occur when containment fails.</div>
-  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Vast shadowy humanoid; constantly shifting form; extreme energy output detectable via indirect sensors.</div>
-  <div class="section"><div class="section-title">BEHAVIOR</div>Dormant. 100 days before release, automated warning system ("The Harbinger") activates to alert humanity.</div>
-  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Direct exposure causes psychosis, terror, and cognitive disruption. All forms of religious cognition are considered cognitohazard vectors.</div>
-  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Multi-dimensional reinforced containment. Humans may not approach; monitoring only.</div>
-  <div class="section"><div class="section-title">NOTES</div>Existential threat; focus on mitigation and preparation; eventual Rapture considered inevitable.</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Contained within Pandora's Box; event known as "The Rapture" will occur when containment fails.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Vast, shadowy humanoid; constantly shifting form; overwhelming energy detectable only indirectly.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Dormant. 100 days before release, automated warning system "The Harbinger" activates.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Psychosis, existential terror, cognitive disruption; all forms of religion are cognitohazard vectors.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Multi-dimensional reinforced containment; no human approach; monitored remotely.</div>
+  <div class="section"><div class="section-title">NOTES</div>Existential threat; eventual Rapture considered inevitable.</div>
 </div>
 
 </main>
 
 <script>
 function showPage(id){
-    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
-    document.getElementById('btn-'+id).classList.add('active');
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('btn-'+id).classList.add('active');
 }
-
-// Show first TA by default
 showPage('TA38282');
 </script>
 
