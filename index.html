@@ -1,138 +1,193 @@
-        <!-- ========================= TA-8 ========================= -->
-        <div id="TA8" class="page">
-            <div class="warning">ACCESS LEVEL: 2 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-102847</div>
-            <div class="section"><div class="section-title">CLASS</div>Safe</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Whispering Lantern</div>
-            <div class="section"><div class="section-title">ORIGIN</div>Discovered in <span class="redacted">███████</span> forest ruins; emits soft, unintelligible whispers.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small lantern-shaped entity; glows faint green; floats silently in air.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans slowly; disappears when approached.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Minor curiosity and fascination; no harm recorded.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Contained in clear glass dome; harmless to personnel.</div>
-            <div class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices, causing minor flickers.</div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCCA TA-Documents</title>
+<style>
+    body { font-family: monospace; background: #111; color: #eee; margin:0; padding:0; }
+    nav { background:#222; padding:10px; display:flex; flex-wrap:wrap; gap:5px; }
+    button { background:#333; color:#eee; border:none; padding:5px 10px; cursor:pointer; }
+    button:hover { background:#555; }
+    .page { display:none; padding:20px; max-width:800px; margin:0 auto; position:relative; }
+    .page.active { display:block; }
+    .warning { color:#f55; font-weight:bold; margin-bottom:10px; }
+    .section { margin-bottom:12px; }
+    .section-title { font-weight:bold; text-decoration:underline; margin-bottom:3px; }
+    .redacted { background-color:black; color:black; cursor:pointer; padding:0 2px; }
+    .redacted.revealed { color:#eee; background:none; }
+    /* subtle glitch animation for Mettia/Ketemmu */
+    .dangerous { animation: flicker 2s infinite; }
+    @keyframes flicker {
+        0%,100% { opacity:1; }
+        45%,55% { opacity:0.6; }
+        50% { opacity:0.8; }
+    }
+</style>
+</head>
+<body>
 
-        <!-- ========================= TA-9 ========================= -->
-        <div id="TA9" class="page">
-            <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-213948</div>
-            <div class="section"><div class="section-title">CLASS</div>Mettia</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Shard Maw</div>
-            <div class="section"><div class="section-title">ORIGIN</div>Originated from <span class="redacted">███████</span> abandoned mine.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Large, jagged crystalline entity; constantly shifts and grows new shards.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Aggressive when approached; hunts through tunnels and shadows.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Lacerations; disorientation and nausea; anxiety spike in proximity.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Sealed reinforced chamber; monitored via infrared cameras.</div>
-            <div class="section"><div class="section-title">NOTES</div>Shards regenerate quickly; caution required during containment breach.</div>
-        </div>
+<nav>
+    <button onclick="unlockPage('TA8',2)">TA-8</button>
+    <button onclick="unlockPage('TA9',3)">TA-9</button>
+    <button onclick="unlockPage('TA10',3)">TA-10</button>
+    <button onclick="unlockPage('TA11',2)">TA-11</button>
+    <button onclick="unlockPage('TA12',4)">TA-12</button>
+    <button onclick="unlockPage('TA13',3)">TA-13</button>
+    <button onclick="unlockPage('TA14',2)">TA-14</button>
+    <button onclick="unlockPage('TA15',3)">TA-15</button>
+    <button onclick="unlockPage('TA16',4)">TA-16</button>
+</nav>
 
-        <!-- ========================= TA-10 ========================= -->
-        <div id="TA10" class="page">
-            <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-324759</div>
-            <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Living Fog</div>
-            <div class="section"><div class="section-title">ORIGIN</div>Appeared during the <span class="redacted">████</span> city smog event.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous fog with hints of humanoid faces and limbs; partially visible in infrared.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Drifts through urban areas; absorbs sound; avoids light sources.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Severe disorientation, auditory hallucinations, fainting if prolonged exposure.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Negative pressure chambers; chemical dispersion; monitoring only.</div>
-            <div class="section"><div class="section-title">NOTES</div>Highly adaptive; changes density and behavior based on environment.</div>
-        </div>
+<main>
 
-        <!-- ========================= TA-11 ========================= -->
-        <div id="TA11" class="page">
-            <div class="warning">ACCESS LEVEL: 2 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-435862</div>
-            <div class="section"><div class="section-title">CLASS</div>Safe</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Clocking Doll</div>
-            <div class="section"><div class="section-title">ORIGIN</div>Found in <span class="redacted">█████</span> antique shop; movement mimics human gestures.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small humanoid doll; joints click like clockwork; eyes follow movement.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Idle when observed; moves unpredictably if left alone.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Mild discomfort; fascination; rare nightmares.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Glass case; avoid prolonged observation.</div>
-            <div class="section"><div class="section-title">NOTES</div>Records subtle motions; potential for study in motion patterns.</div>
-        </div>
-
-        <!-- ========================= TA-12 ========================= -->
-        <div id="TA12" class="page">
-            <div class="warning">ACCESS LEVEL: 4 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-547203</div>
-            <div class="section"><div class="section-title">CLASS</div>Mettia</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Ink Lurker</div>
-            <div class="section"><div class="section-title">ORIGIN</div>Observed in <span class="redacted">███████</span> libraries; black liquid forms humanoid shape.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous black liquid; flows unnaturally; forms jagged humanoid figures.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Seeks unobserved humans; disperses if directly lit.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Psychological terror; nausea; temporary hallucinations of text turning into entities.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Opaque liquid containment tanks; no direct observation; remote monitoring.</div>
-            <div class="section"><div class="section-title">NOTES</div>Highly fluid; unpredictable if containment is disturbed.</div>
-        </div>
-
-        <!-- ========================= TA-13 ========================= -->
-        <div id="TA13" class="page">
-            <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-658294</div>
-            <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Bone Collector</div>
-            <div class="section"><div class="section-title">ORIGIN</div>Found in <span class="redacted">██████</span> graveyards; associated with missing persons reports.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Humanoid skeleton entity; moves unnaturally fast; bones shimmer faintly.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Gathers scattered bones; avoids direct light; predatory if observed.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Intense fear, vertigo, occasional fainting.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Reinforced crypt; soundproof monitoring only.</div>
-            <div class="section"><div class="section-title">NOTES</div>Seems sentient; studies show pattern in collected bones.</div>
-        </div>
-
-        <!-- ========================= TA-14 ========================= -->
-        <div id="TA14" class="page">
-            <div class="warning">ACCESS LEVEL: 2 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-769485</div>
-            <div class="section"><div class="section-title">CLASS</div>Safe</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Light Wisp</div>
-            <div class="section"><div class="section-title">ORIGIN</div>First noted in <span class="redacted">██████</span> coastal cliffs.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small glowing orb; shifts colors based on mood of nearby humans.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans briefly; harmless; vanishes after interaction.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Sense of calm, minor curiosity.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Glass enclosure; harmless.</div>
-            <div class="section"><div class="section-title">NOTES</div>Used in research on emotional resonance in entities.</div>
-        </div>
-
-        <!-- ========================= TA-15 ========================= -->
-        <div id="TA15" class="page">
-            <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-874321</div>
-            <div class="section"><div class="section-title">CLASS</div>Mettia</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Mirror Man</div>
-            <div class="section"><div class="section-title">ORIGIN</div>First encountered in <span class="redacted">██████</span> abandoned hotel; surfaces reflect distorted humanoid figure.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Shimmering humanoid; reflective surfaces show exaggerated features; limbs may stretch unnaturally.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Appears in mirrors; vanishes when directly approached; unpredictable.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Dizziness, nausea, hallucinations, loss of time perception.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Mirror-free rooms; indirect observation only.</div>
-            <div class="section"><div class="section-title">NOTES</div>Extremely sensitive to light angles; may anticipate observers’ movements.</div>
-        </div>
-
-        <!-- ========================= TA-16 ========================= -->
-        <div id="TA16" class="page">
-            <div class="warning">ACCESS LEVEL: 4 REQUIRED</div>
-            <div class="section"><div class="section-title">DESIGNATION</div>TA-983210</div>
-            <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
-            <div class="section"><div class="section-title">ALIASES</div>The Fractured Echo</div>
-            <div class="section"><div class="section-title">ORIGIN</div>Detected in <span class="redacted">██████</span> abandoned sound studios; emits overlapping voices.</div>
-            <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous humanoid form; constantly vibrates, echoes of speech heard within entity.</div>
-            <div class="section"><div class="section-title">BEHAVIOR</div>Stalks sound sources; avoids silence; highly reactive to human voices.</div>
-            <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Auditory hallucinations, confusion, memory loops.</div>
-            <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Soundproof containment; monitored remotely.</div>
-            <div class="section"><div class="section-title">NOTES</div>Patterns suggest semi-sentience; avoids areas of complete silence.</div>
-        </div>
-
-    </main>
+<!-- ========================= TA-8 ========================= -->
+<div id="TA8" class="page">
+    <div class="warning">ACCESS LEVEL: 2 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-102847</div>
+    <div class="section"><div class="section-title">CLASS</div>Safe</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Whispering Lantern</div>
+    <div class="section"><div class="section-title">ORIGIN</div>Discovered in <span class="redacted">███████</span> forest ruins; emits soft, unintelligible whispers.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small lantern-shaped entity; glows faint green; floats silently in air.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans slowly; disappears when approached.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Minor curiosity and fascination; no harm recorded.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Contained in clear glass dome; harmless to personnel.</div>
+    <div class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices, causing minor flickers.</div>
 </div>
 
+<!-- ========================= TA-9 ========================= -->
+<div id="TA9" class="page dangerous">
+    <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-213948</div>
+    <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Shard Maw</div>
+    <div class="section"><div class="section-title">ORIGIN</div>Originated from <span class="redacted">███████</span> abandoned mine.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Large, jagged crystalline entity; constantly shifts and grows new shards.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Aggressive when approached; hunts through tunnels and shadows.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Lacerations; disorientation and nausea; anxiety spike in proximity.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Sealed reinforced chamber; monitored via infrared cameras.</div>
+    <div class="section"><div class="section-title">NOTES</div>Shards regenerate quickly; caution required during containment breach.</div>
+</div>
+
+<!-- ========================= TA-10 ========================= -->
+<div id="TA10" class="page dangerous">
+    <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-324759</div>
+    <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Living Fog</div>
+    <div class="section"><div class="section-title">ORIGIN</div>Appeared during the <span class="redacted">████</span> city smog event.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous fog with hints of humanoid faces and limbs; partially visible in infrared.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Drifts through urban areas; absorbs sound; avoids light sources.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Severe disorientation, auditory hallucinations, fainting if prolonged exposure.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Negative pressure chambers; chemical dispersion; monitoring only.</div>
+    <div class="section"><div class="section-title">NOTES</div>Highly adaptive; changes density and behavior based on environment.</div>
+</div>
+
+<!-- ========================= TA-11 ========================= -->
+<div id="TA11" class="page">
+    <div class="warning">ACCESS LEVEL: 2 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-435862</div>
+    <div class="section"><div class="section-title">CLASS</div>Safe</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Clocking Doll</div>
+    <div class="section"><div class="section-title">ORIGIN</div>Found in <span class="redacted">█████</span> antique shop; movement mimics human gestures.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small humanoid doll; joints click like clockwork; eyes follow movement.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Idle when observed; moves unpredictably if left alone.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Mild discomfort; fascination; rare nightmares.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Glass case; avoid prolonged observation.</div>
+    <div class="section"><div class="section-title">NOTES</div>Records subtle motions; potential for study in motion patterns.</div>
+</div>
+
+<!-- ========================= TA-12 ========================= -->
+<div id="TA12" class="page dangerous">
+    <div class="warning">ACCESS LEVEL: 4 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-547203</div>
+    <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Ink Lurker</div>
+    <div class="section"><div class="section-title">ORIGIN</div>Observed in <span class="redacted">███████</span> libraries; black liquid forms humanoid shape.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous black liquid; flows unnaturally; forms jagged humanoid figures.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Seeks unobserved humans; disperses if directly lit.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Psychological terror; nausea; temporary hallucinations of text turning into entities.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Opaque liquid containment tanks; no direct observation; remote monitoring.</div>
+    <div class="section"><div class="section-title">NOTES</div>Highly fluid; unpredictable if containment is disturbed.</div>
+</div>
+
+<!-- ========================= TA-13 ========================= -->
+<div id="TA13" class="page dangerous">
+    <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-658294</div>
+    <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Bone Collector</div>
+    <div class="section"><div class="section-title">ORIGIN</div>Found in <span class="redacted">██████</span> graveyards; associated with missing persons reports.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Humanoid skeleton entity; moves unnaturally fast; bones shimmer faintly.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Gathers scattered bones; avoids direct light; predatory if observed.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Intense fear, vertigo, occasional fainting.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Reinforced crypt; soundproof monitoring only.</div>
+    <div class="section"><div class="section-title">NOTES</div>Seems sentient; studies show pattern in collected bones.</div>
+</div>
+
+<!-- ========================= TA-14 ========================= -->
+<div id="TA14" class="page">
+    <div class="warning">ACCESS LEVEL: 2 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-769485</div>
+    <div class="section"><div class="section-title">CLASS</div>Safe</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Light Wisp</div>
+    <div class="section"><div class="section-title">ORIGIN</div>First noted in <span class="redacted">██████</span> coastal cliffs.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small glowing orb; shifts colors based on mood of nearby humans.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans briefly; harmless; vanishes after interaction.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Sense of calm, minor curiosity.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Glass enclosure; harmless.</div>
+    <div class="section"><div class="section-title">NOTES</div>Used in research on emotional resonance in entities.</div>
+</div>
+
+<!-- ========================= TA-15 ========================= -->
+<div id="TA15" class="page dangerous">
+    <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-874321</div>
+    <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Mirror Man</div>
+    <div class="section"><div class="section-title">ORIGIN</div>First encountered in <span class="redacted">██████</span> abandoned hotel; surfaces reflect distorted humanoid figure.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Shimmering humanoid; reflective surfaces show exaggerated features; limbs may stretch unnaturally.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Appears in mirrors; vanishes when directly approached; unpredictable.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Dizziness, nausea, hallucinations, loss of time perception.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Mirror-free rooms; indirect observation only.</div>
+    <div class="section"><div class="section-title">NOTES</div>Extremely sensitive to light angles; may anticipate observers’ movements.</div>
+</div>
+
+<!-- ========================= TA-16 ========================= -->
+<div id="TA16" class="page dangerous">
+    <div class="warning">ACCESS LEVEL: 4 REQUIRED</div>
+    <div class="section"><div class="section-title">DESIGNATION</div>TA-983210</div>
+    <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+    <div class="section"><div class="section-title">ALIASES</div>The Fractured Echo</div>
+    <div class="section"><div class="section-title">ORIGIN</div>Detected in <span class="redacted">██████</span> abandoned sound studios; emits overlapping voices.</div>
+    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous humanoid form; constantly vibrates, echoes of speech heard within entity.</div>
+    <div class="section"><div class="section-title">BEHAVIOR</div>Stalks sound sources; avoids silence; highly reactive to human voices.</div>
+    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Auditory hallucinations, confusion, memory loops.</div>
+    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Soundproof containment; monitored remotely.</div>
+    <div class="section"><div class="section-title">NOTES</div>Patterns suggest semi-sentience; avoids areas of complete silence.</div>
+</div>
+
+</main>
+
 <script>
-    function showPage(id) {
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => page.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
+function showPage(id){
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+function unlockPage(id, requiredLevel){
+    let userLevel = prompt("Enter access level:");
+    if(parseInt(userLevel) >= requiredLevel){
+        showPage(id);
+    } else {
+        alert("ACCESS DENIED");
     }
+}
+
+// Redacted click-to-reveal
+document.querySelectorAll('.redacted').forEach(span=>{
+    span.addEventListener('click',()=>span.classList.toggle('revealed'));
+});
 </script>
 </body>
 </html>
