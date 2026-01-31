@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <title>Treetops Cryptid Containment Archives (TCCA)</title>
 <style>
-  body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #660000; /* Maroon background */
+    background-color: #660000;
     color: #f0f0f0;
-  }
-  .sidebar {
-    width: 220px;
+}
+.sidebar {
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,163 +19,234 @@
     background-color: #330000;
     overflow-y: auto;
     padding: 10px;
-  }
-  .sidebar h2 {
+    border-right: 2px solid #000000;
+    box-shadow: 2px 0 6px #000000;
+}
+.sidebar h1 {
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 15px;
     color: #ff9999;
-  }
-  .nav-button {
+    text-shadow: 1px 1px 3px #000000;
+}
+.nav-button {
     padding: 8px 10px;
     margin: 5px 0;
     background-color: #440000;
-    border: none;
+    border: 1px solid #222222;
     cursor: pointer;
     color: #f0f0f0;
     text-align: left;
-  }
-  .nav-button:hover {
+    border-radius: 3px;
+}
+.nav-button:hover {
     background-color: #550000;
-  }
-  .main {
-    margin-left: 240px;
+    border-color: #555555;
+}
+.main {
+    margin-left: 260px;
     padding: 20px;
-  }
-  .page {
+    background-color: #440000;
+    border-left: 2px solid #000000;
+    min-height: 100vh;
+}
+.page {
     display: none;
-  }
-  .section {
+    border: 1px solid #222222;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #330000;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #000000;
+}
+.section {
     margin-bottom: 12px;
-  }
-  .section-title {
+}
+.section-title {
     font-weight: bold;
     color: #ff9999;
-    margin-bottom: 3px;
-  }
-  .warning {
+    margin-bottom: 4px;
+    text-shadow: 0 0 2px #000000;
+}
+.warning {
     color: #ff4444;
     font-weight: bold;
     margin-bottom: 15px;
-  }
-  .redacted {
+    text-shadow: 0 0 2px #000000;
+}
+.redacted {
     background-color: black;
     color: black;
     padding: 0 4px;
-  }
+}
 </style>
 </head>
 <body>
 
 <div class="sidebar">
-  <h2>TCCA Archive</h2>
-  <div class="nav-button" onclick="showPage('TA39203')">TA-39203</div>
-  <div class="nav-button" onclick="showPage('TA32093B')">TA-32093-B</div>
-  <div class="nav-button" onclick="showPage('TA445566')">TA-445566</div>
-  <div class="nav-button" onclick="showPage('TA778899')">TA-778899</div>
-  <div class="nav-button" onclick="showPage('TA889900')">TA-889900</div>
-  <div class="nav-button" onclick="showPage('TA334455')">TA-334455</div>
+    <h1>TCCA Archives</h1>
+    <!-- Sidebar buttons for each TA -->
+    <div class="nav-button" onclick="showPage('TA39203')">TA-39203</div>
+    <div class="nav-button" onclick="showPage('TA32093B')">TA-32093-B</div>
+    <div class="nav-button" onclick="showPage('TA445566')">TA-445566</div>
+    <div class="nav-button" onclick="showPage('TA778899')">TA-778899</div>
+    <div class="nav-button" onclick="showPage('TA889900')">TA-889900</div>
+    <div class="nav-button" onclick="showPage('TA334455')">TA-334455</div>
+    <div class="nav-button" onclick="showPage('TA556677')">TA-556677</div>
+    <div class="nav-button" onclick="showPage('TA667788')">TA-667788</div>
+    <div class="nav-button" onclick="showPage('TA998877')">TA-998877</div>
+    <div class="nav-button" onclick="showPage('TA112233')">TA-112233</div>
+    <div class="nav-button" onclick="showPage('TA223344')">TA-223344</div>
+    <div class="nav-button" onclick="showPage('TA334466')">TA-334466</div>
+    <div class="nav-button" onclick="showPage('TA445577')">TA-445577</div>
+    <div class="nav-button" onclick="showPage('TA556688')">TA-556688</div>
+    <div class="nav-button" onclick="showPage('TA667799')">TA-667799</div>
 </div>
 
 <div class="main">
-  <!-- ========================= TA-39203 ========================= -->
-  <div id="TA39203" class="page">
-    <div class="warning">ACCESS LEVEL: 5 REQUIRED</div>
-    <div class="section"><div class="section-title">DESIGNATION</div>TA-39203</div>
-    <div class="section"><div class="section-title">CLASS</div>Ketemmu (Dormant, dangerous, hard to contain)</div>
-    <div class="section"><div class="section-title">ALIASES</div>“The Imprisoned God”</div>
-    <div class="section"><div class="section-title">ORIGIN</div>Sealed inside Pandora’s Box ~████ years ago.</div>
-    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>8D entity, perception fluctuates with cognition; presence causes reality distortions.</div>
-    <div class="section"><div class="section-title">BEHAVIOR</div>Dormant within containment box; will inevitably awaken (event known as The Rapture).</div>
-    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>All religions and belief systems are subconsciously influenced by its cognitohazard.</div>
-    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Encased in time-locked quantum assembly; no failsafe known; observation only.</div>
-    <div class="section"><div class="section-title">NOTES</div>Any interference may accelerate “Rapture” event. Reality instability increases when approached.</div>
-  </div>
+    <!-- ========================= TA Entries ========================= -->
 
-  <!-- ========================= TA-32093-B ========================= -->
-  <div id="TA32093B" class="page">
-    <div class="warning">ACCESS LEVEL: 5 REQUIRED</div>
-    <div class="section"><div class="section-title">DESIGNATION</div>TA-32093-B</div>
-    <div class="section"><div class="section-title">CLASS</div>Pollia (Announces events, does not harm)</div>
-    <div class="section"><div class="section-title">ALIASES</div>The Harbinger</div>
-    <div class="section"><div class="section-title">ORIGIN</div>Emerges 100 days before Rapture; manifests near areas of high human cognition.</div>
-    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Ephemeral figure, glowing faintly, surrounded by quantum shielding.</div>
-    <div class="section"><div class="section-title">BEHAVIOR</div>Announces approaching “Rapture” events; interacts with observers via mental projection.</div>
-    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Heightened awareness; subtle mental guidance from the quantum shield.</div>
-    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>None required; observation recommended only.</div>
-    <div class="section"><div class="section-title">NOTES</div>Acts as a warning system; considered crucial for preparedness protocols.</div>
-  </div>
+    <!-- TA-39203 -->
+    <div id="TA39203" class="page">
+        <div class="warning">ACCESS LEVEL: 5 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-39203</div>
+        <div class="section"><div class="section-title">CLASS</div>Ketemmu (Dormant, dangerous, hard to contain)</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Imprisoned God</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Sealed inside Pandora’s Box ~████ years ago.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>8D entity; perception fluctuates with cognition; presence causes reality distortions.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Dormant within containment box; will inevitably awaken (event known as The Rapture).</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>All religions and belief systems are subconsciously influenced by its cognitohazard.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Encased in time-locked quantum assembly; no failsafe known; observation only.</div>
+        <div class="section"><div class="section-title">NOTES</div>Any interference may accelerate “Rapture” event. Reality instability increases when approached.</div>
+    </div>
 
-  <!-- ========================= TA-445566 ========================= -->
-  <div id="TA445566" class="page">
-    <div class="warning">ACCESS LEVEL: 4 REQUIRED</div>
-    <div class="section"><div class="section-title">DESIGNATION</div>TA-445566</div>
-    <div class="section"><div class="section-title">CLASS</div>Mettia (Dangerous, but containable)</div>
-    <div class="section"><div class="section-title">ALIASES</div>The Flicker</div>
-    <div class="section"><div class="section-title">ORIGIN</div>Appeared after experimental temporal rift at ████ Facility.</div>
-    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Humanoid silhouette, appears/disappears intermittently, leaving temporal afterimages.</div>
-    <div class="section"><div class="section-title">BEHAVIOR</div>Moves unpredictably; avoids direct human contact.</div>
-    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Short-term temporal disorientation, déjà vu, memory fragmentation.</div>
-    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Chronostatic field chamber; observation via remote cameras only.</div>
-    <div class="section"><div class="section-title">NOTES</div>Linked to minor temporal anomalies in multiple locations.</div>
-  </div>
+    <!-- TA-32093-B -->
+    <div id="TA32093B" class="page">
+        <div class="warning">ACCESS LEVEL: 5 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-32093-B</div>
+        <div class="section"><div class="section-title">CLASS</div>Pollia (Announces events, does not harm)</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Harbinger</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Emerges 100 days before Rapture; manifests near areas of high human cognition.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Ephemeral figure, glowing faintly, surrounded by quantum shielding.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Announces approaching “Rapture” events; interacts with observers via mental projection.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Heightened awareness; subtle mental guidance from the quantum shield.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>None required; observation recommended only.</div>
+        <div class="section"><div class="section-title">NOTES</div>Acts as a warning system; considered crucial for preparedness protocols.</div>
+    </div>
 
-  <!-- ========================= TA-778899 ========================= -->
-  <div id="TA778899" class="page">
-    <div class="warning">ACCESS LEVEL: 5 REQUIRED</div>
-    <div class="section"><div class="section-title">DESIGNATION</div>TA-778899</div>
-    <div class="section"><div class="section-title">CLASS</div>Pollia</div>
-    <div class="section"><div class="section-title">ALIASES</div>The Herald of Storms</div>
-    <div class="section"><div class="section-title">ORIGIN</div>Manifested naturally during extreme electrical storms in Andes.</div>
-    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Gigantic humanoid wreathed in lightning arcs; appears only during storms.</div>
-    <div class="section"><div class="section-title">BEHAVIOR</div>Announces severe weather events; does not attack humans.</div>
-    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Witnesses report awe; no harm recorded.</div>
-    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Observation only.</div>
-    <div class="section"><div class="section-title">NOTES</div>Considered beneficial; may warn of natural disasters.</div>
-  </div>
+    <!-- TA-445566 -->
+    <div id="TA445566" class="page">
+        <div class="warning">ACCESS LEVEL: 4 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-445566</div>
+        <div class="section"><div class="section-title">CLASS</div>Mettia (Dangerous, but containable)</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Flicker</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Appeared after experimental temporal rift at ████ Facility.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Humanoid silhouette, appears/disappears intermittently, leaving temporal afterimages.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Moves unpredictably; avoids direct human contact.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Short-term temporal disorientation, déjà vu, memory fragmentation.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Chronostatic field chamber; observation via remote cameras only.</div>
+        <div class="section"><div class="section-title">NOTES</div>Linked to minor temporal anomalies in multiple locations.</div>
+    </div>
 
-  <!-- ========================= TA-889900 ========================= -->
-  <div id="TA889900" class="page">
-    <div class="warning">ACCESS LEVEL: 6 REQUIRED</div>
-    <div class="section"><div class="section-title">DESIGNATION</div>TA-889900</div>
-    <div class="section"><div class="section-title">CLASS</div>Memmu</div>
-    <div class="section"><div class="section-title">ALIASES</div>The Eclipsed Mind</div>
-    <div class="section"><div class="section-title">ORIGIN</div>First recorded in ████████ psychic experiment logs.</div>
-    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Intangible mass of dark energy appearing as a black void.</div>
-    <div class="section"><div class="section-title">BEHAVIOR</div>Seeks human minds; cannot be permanently contained.</div>
-    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Severe cognitive disruption, memory loss, personality changes; highly contagious cognitohazard.</div>
-    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Theoretical only; isolation and psychic shielding recommended.</div>
-    <div class="section"><div class="section-title">NOTES</div>Inevitable; observe remotely only.</div>
-  </div>
+    <!-- TA-778899 -->
+    <div id="TA778899" class="page">
+        <div class="warning">ACCESS LEVEL: 5 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-778899</div>
+        <div class="section"><div class="section-title">CLASS</div>Pollia</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Herald of Storms</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Manifested naturally during extreme electrical storms in Andes.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Gigantic humanoid wreathed in lightning arcs; appears only during storms.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Announces severe weather events; does not attack humans.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Witnesses report awe; no harm recorded.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Observation only.</div>
+        <div class="section"><div class="section-title">NOTES</div>Considered beneficial; may warn of natural disasters.</div>
+    </div>
 
-  <!-- ========================= TA-334455 ========================= -->
-  <div id="TA334455" class="page">
-    <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
-    <div class="section"><div class="section-title">DESIGNATION</div>TA-334455</div>
-    <div class="section"><div class="section-title">CLASS</div>Safe</div>
-    <div class="section"><div class="section-title">ALIASES</div>The Silent Library</div>
-    <div class="section"><div class="section-title">ORIGIN</div>Found in abandoned ██████ archives.</div>
-    <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Non-corporeal, manifests as faint whispers and floating books.</div>
-    <div class="section"><div class="section-title">BEHAVIOR</div>Moves books around without interacting with humans directly.</div>
-    <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Mild unease; no lasting harm.</div>
-    <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Standard containment room; observation optional.</div>
-    <div class="section"><div class="section-title">NOTES</div>Safe; study for memetic research.</div>
-  </div>
+    <!-- TA-889900 -->
+    <div id="TA889900" class="page">
+        <div class="warning">ACCESS LEVEL: 6 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-889900</div>
+        <div class="section"><div class="section-title">CLASS</div>Memmu</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Eclipsed Mind</div>
+        <div class="section"><div class="section-title">ORIGIN</div>First recorded in ████████ psychic experiment logs.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Intangible mass of dark energy appearing as a black void.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Seeks human minds; cannot be permanently contained.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Severe cognitive disruption, memory loss, personality changes; highly contagious cognitohazard.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Theoretical only; isolation and psychic shielding recommended.</div>
+        <div class="section"><div class="section-title">NOTES</div>Inevitable; observe remotely only.</div>
+    </div>
+
+    <!-- TA-334455 -->
+    <div id="TA334455" class="page">
+        <div class="warning">ACCESS LEVEL: 3 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-334455</div>
+        <div class="section"><div class="section-title">CLASS</div>Safe</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Silent Library</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Found in abandoned ██████ archives.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Non-corporeal, manifests as faint whispers and floating books.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Moves books around without interacting with humans directly.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Mild unease; no lasting harm.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Standard containment room; observation optional.</div>
+        <div class="section"><div class="section-title">NOTES</div>Safe; study for memetic research.</div>
+    </div>
+
+    <!-- ========================= New TAs ========================= -->
+
+    <!-- TA-556677 -->
+    <div id="TA556677" class="page">
+        <div class="warning">ACCESS LEVEL: 4 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-556677</div>
+        <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Whispering Fog</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Appeared spontaneously in ██████ forest during winter solstice.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Thick, rolling fog with faint humanoid shapes.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Moves slowly, whispers incoherent instructions in multiple languages.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Disorientation, minor hallucinations.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Contained via thermodynamic field and observation cameras.</div>
+        <div class="section"><div class="section-title">NOTES</div>Linked to multiple disappearances in ██████ region.</div>
+    </div>
+
+    <!-- TA-667788 -->
+    <div id="TA667788" class="page">
+        <div class="warning">ACCESS LEVEL: 5 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-667788</div>
+        <div class="section"><div class="section-title">CLASS</div>Pollia</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Beacon</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Manifested during ████████ solar flare events.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Bright light humanoid, pulsating rhythmically.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Signals imminent natural phenomena; does not interact with humans physically.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Calms observers, increases alertness.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>None required; observation only.</div>
+        <div class="section"><div class="section-title">NOTES</div>Considered a positive omen.</div>
+    </div>
+
+    <!-- TA-998877 -->
+    <div id="TA998877" class="page">
+        <div class="warning">ACCESS LEVEL: 6 REQUIRED</div>
+        <div class="section"><div class="section-title">DESIGNATION</div>TA-998877</div>
+        <div class="section"><div class="section-title">CLASS</div>Memmu</div>
+        <div class="section"><div class="section-title">ALIASES</div>The Shattered Clock</div>
+        <div class="section"><div class="section-title">ORIGIN</div>Discovered after ██████ laboratory time experiments.</div>
+        <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Time anomalies manifesting as fragmented clockwork reality.</div>
+        <div class="section"><div class="section-title">BEHAVIOR</div>Alters perceived time; cannot be contained.</div>
+        <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Severe temporal disorientation, memory shifts.</div>
+        <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Theoretical only; avoid temporal interaction.</div>
+        <div class="section"><div class="section-title">NOTES</div>Highly unstable cognitohazard.</div>
+    </div>
+
+    <!-- More TAs (TA-112233, TA-223344, etc.) can follow the same structure -->
 
 </div>
 
 <script>
-function showPage(id) {
-  let pages = document.getElementsByClassName('page');
-  for (let i=0; i<pages.length; i++) {
-    pages[i].style.display = 'none';
-  }
-  document.getElementById(id).style.display = 'block';
+function showPage(id){
+    let pages = document.getElementsByClassName('page');
+    for(let i=0;i<pages.length;i++){pages[i].style.display='none';}
+    document.getElementById(id).style.display='block';
 }
-showPage('TA39203'); // default open page
+// Default open page
+showPage('TA39203');
 </script>
 
 </body>
 </html>
-
-
