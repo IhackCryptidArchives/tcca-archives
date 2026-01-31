@@ -5,29 +5,110 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TCCA Archives</title>
 <style>
-body { margin:0; font-family:'Segoe UI',sans-serif; display:flex; background:#121212; color:#eee; height:100vh; overflow:hidden; }
-header { position: fixed; top:0; left:0; width:100%; height:60px; background:linear-gradient(90deg,#800000,#a00000); display:flex; align-items:center; justify-content:center; font-size:1.8em; font-weight:bold; color:#fff; z-index:100; box-shadow:0 3px 6px rgba(0,0,0,0.5); }
-nav { width:250px; background:#1f1f1f; padding-top:70px; position:fixed; height:100%; overflow-y:auto; border-right:1px solid #333; }
-nav h2 { text-align:center; font-size:1.3em; padding-bottom:10px; border-bottom:1px solid #555; margin-bottom:10px; color:#fff; }
-nav button { display:block; width:90%; margin:5px auto; padding:10px; border:none; background:#2c2c2c; color:#eee; text-align:left; font-size:0.95em; border-radius:4px; cursor:pointer; transition:0.2s; }
-nav button:hover { background:#444; }
-nav button.active { background:#800000; color:#fff; font-weight:bold; }
-main { margin-left:250px; padding:80px 30px 30px 30px; overflow-y:auto; flex:1; scroll-behavior:smooth; position:relative; }
+body {
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    display:flex;
+    background:#121212;
+    color:#eee;
+    height:100vh;
+    overflow:hidden;
+}
 
-.page { display:none; animation: fadeIn 0.3s ease-in; }
-.page.active { display:block; }
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background:maroon;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8em;
+    font-weight:bold;
+    color:#fff;
+    z-index:100;
+    box-shadow:0 3px 6px rgba(0,0,0,0.5);
+}
 
-@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+nav {
+    width:250px;
+    background:#1f1f1f;
+    padding-top:70px;
+    position:fixed;
+    height:100%;
+    overflow-y:auto;
+    border-right:1px solid #333;
+}
 
-.section { margin-bottom:16px; padding-bottom:4px; border-bottom:1px solid #333; }
-.section-title { font-weight:bold; font-size:1.05em; color:#f5f5f5; margin-bottom:4px; }
-.redacted { background-color:#000; color:#000; cursor:pointer; padding:0 3px; border-radius:2px; }
-.redacted.revealed { color:#eee; background:none; }
+nav h2 {
+    text-align:center;
+    font-size:1.3em;
+    padding-bottom:10px;
+    border-bottom:1px solid #555;
+    margin-bottom:10px;
+}
 
-.dangerous { animation: glow 2s infinite alternate; }
-@keyframes glow { 0% { box-shadow:0 0 0 #800000; } 50% { box-shadow:0 0 12px #800000; } 100% { box-shadow:0 0 0 #800000; } }
+nav button {
+    display:block;
+    width:90%;
+    margin:5px auto;
+    padding:10px;
+    border:none;
+    background:#2c2c2c;
+    color:#eee;
+    text-align:left;
+    font-size:0.95em;
+    border-radius:4px;
+    cursor:pointer;
+    transition:0.2s;
+}
 
-.moving-text { position: fixed; top:80px; left:300px; right:30px; font-size:1em; color:#eee; opacity:0.6; pointer-events:none; transition:transform 0.2s ease-out; z-index:10; }
+nav button:hover {
+    background:#444;
+}
+
+nav button.active {
+    background:maroon;
+    color:#fff;
+    font-weight:bold;
+}
+
+main {
+    margin-left:250px;
+    padding:80px 30px 30px 30px;
+    overflow-y:auto;
+    flex:1;
+    scroll-behavior:smooth;
+    position:relative;
+}
+
+.page {
+    display:none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.page.active {
+    display:block;
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.section {
+    margin-bottom:16px;
+    padding-bottom:4px;
+    border-bottom:1px solid #333;
+}
+
+.section-title {
+    font-weight:bold;
+    font-size:1.05em;
+    margin-bottom:4px;
+}
 </style>
 </head>
 <body>
@@ -49,12 +130,12 @@ main { margin-left:250px; padding:80px 30px 30px 30px; overflow-y:auto; flex:1; 
 
 <main>
 
-<!-- TA-38282 FULL TEXT -->
+<!-- TA-38282 -->
 <div id="TA38282" class="page">
   <div class="section"><div class="section-title">DESIGNATION</div>TA-38282</div>
   <div class="section"><div class="section-title">CLASS</div>Safe</div>
   <div class="section"><div class="section-title">ALIASES</div>The Whispering Lantern</div>
-  <div class="section"><div class="section-title">ORIGIN</div>Discovered in <span class="redacted">███████</span> forest ruins; emits soft, unintelligible whispers.</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Discovered in forest ruins; emits soft, unintelligible whispers.</div>
   <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small lantern-shaped entity; glows faint green; floats silently in air.</div>
   <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans slowly; disappears when approached.</div>
   <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Minor curiosity and fascination; no harm recorded.</div>
@@ -62,17 +143,109 @@ main { margin-left:250px; padding:80px 30px 30px 30px; overflow-y:auto; flex:1; 
   <div class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices, causing minor flickers.</div>
 </div>
 
-<!-- PLACEHOLDER TAs -->
-<div id="TA2839237" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
-<div id="TA101838" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
-<div id="TA984302" class="page"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
-<div id="TA477592" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
-<div id="TA892104" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
-<div id="TA560193" class="page"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
-<div id="TA731920" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
-<div id="TA119384" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<!-- TA-2839237 -->
+<div id="TA2839237" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-2839237</div>
+  <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Shard Maw</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Abandoned mine; crystalline entity.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Jagged crystals constantly growing; sharp edges.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Aggressive, hunts through tunnels and shadows.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Lacerations, nausea, disorientation, anxiety spike.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Sealed reinforced chamber; infrared monitoring required.</div>
+  <div class="section"><div class="section-title">NOTES</div>Shards regenerate quickly; extreme caution during containment breach.</div>
+</div>
 
-<div class="moving-text" id="movingText">[TCCA ARCHIVE: TA-38282 — Hover over sections to reveal redactions]</div>
+<!-- TA-101838 -->
+<div id="TA101838" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-101838</div>
+  <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Living Fog</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Appeared during city smog event.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous fog with humanoid faces; partially visible in infrared.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Drifts through urban areas; absorbs sound; avoids light.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Disorientation, auditory hallucinations, fainting if prolonged exposure.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Negative pressure chambers; chemical dispersion; monitoring only.</div>
+  <div class="section"><div class="section-title">NOTES</div>Highly adaptive; changes density and behavior based on environment.</div>
+</div>
+
+<!-- TA-984302 -->
+<div id="TA984302" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-984302</div>
+  <div class="section"><div class="section-title">CLASS</div>Safe</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Clocking Doll</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Antique shop; movement mimics human gestures.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small humanoid doll; clockwork joints; eyes follow movement.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Idle when observed; moves unpredictably if alone.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Mild discomfort; fascination; rare nightmares.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Glass case; avoid prolonged observation.</div>
+  <div class="section"><div class="section-title">NOTES</div>Records subtle motions; potential for motion studies.</div>
+</div>
+
+<!-- TA-477592 -->
+<div id="TA477592" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-477592</div>
+  <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Ink Lurker</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Libraries; black liquid forming humanoid shapes.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous black liquid; jagged humanoid forms.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Seeks unobserved humans; disperses if lit.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Psychological terror; nausea; hallucinations of text becoming entity.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Opaque liquid tanks; remote monitoring only.</div>
+  <div class="section"><div class="section-title">NOTES</div>Highly fluid; unpredictable if disturbed.</div>
+</div>
+
+<!-- TA-892104 -->
+<div id="TA892104" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-892104</div>
+  <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Bone Collector</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Graveyards; associated with missing persons.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Humanoid skeleton; moves unnaturally fast; bones shimmer faintly.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Gathers bones; avoids light; predatory if observed.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Intense fear, vertigo, occasional fainting.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Reinforced crypt; soundproof monitoring only.</div>
+  <div class="section"><div class="section-title">NOTES</div>Appears sentient; patterns exist in collected bones.</div>
+</div>
+
+<!-- TA-560193 -->
+<div id="TA560193" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-560193</div>
+  <div class="section"><div class="section-title">CLASS</div>Safe</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Light Wisp</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Coastal cliffs; first observed shifting colors.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small glowing orb; changes colors with human mood.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans briefly; harmless; vanishes.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Calm, minor curiosity.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Glass enclosure; harmless.</div>
+  <div class="section"><div class="section-title">NOTES</div>Used in research on emotional resonance.</div>
+</div>
+
+<!-- TA-731920 -->
+<div id="TA731920" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-731920</div>
+  <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Mirror Man</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Abandoned hotel; surfaces reflect distorted humanoid figure.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Shimmering humanoid; reflective surfaces exaggerate features.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Appears in mirrors; vanishes when approached; unpredictable.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Dizziness, nausea, hallucinations, loss of time perception.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Mirror-free rooms; indirect observation only.</div>
+  <div class="section"><div class="section-title">NOTES</div>Sensitive to light angles; may anticipate observers’ movements.</div>
+</div>
+
+<!-- TA-119384 -->
+<div id="TA119384" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-119384</div>
+  <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Imprisoned God / The Harbinger</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Contained within Pandora's Box artifact; entity of unimaginable power. Event known as "The Rapture" will occur when containment fails.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Vast shadowy humanoid; constantly shifting form; extreme energy output detectable via indirect sensors.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Dormant. 100 days before release, automated warning system ("The Harbinger") activates to alert humanity.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Direct exposure causes psychosis, terror, and cognitive disruption. All forms of religious cognition are considered cognitohazard vectors.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Multi-dimensional reinforced containment. Humans may not approach; monitoring only.</div>
+  <div class="section"><div class="section-title">NOTES</div>Existential threat; focus on mitigation and preparation; eventual Rapture considered inevitable.</div>
+</div>
 
 </main>
 
@@ -83,15 +256,6 @@ function showPage(id){
     document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
     document.getElementById('btn-'+id).classList.add('active');
 }
-
-// Redacted click-to-reveal
-document.querySelectorAll('.redacted').forEach(r=>r.addEventListener('click',()=>r.classList.toggle('revealed')));
-
-// Moving text follows scroll
-const movingText = document.getElementById('movingText');
-document.querySelector('main').addEventListener('scroll', e=>{
-    movingText.style.transform = `translateY(${e.target.scrollTop}px)`;
-});
 
 // Show first TA by default
 showPage('TA38282');
