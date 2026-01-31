@@ -20,34 +20,22 @@ header {
     top:0;
     left:0;
     width:100%;
-    height:120px;
+    height:60px;
     background:maroon;
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-direction:column;
     z-index:100;
     box-shadow:0 3px 6px rgba(0,0,0,0.5);
-}
-
-header pre {
-    color:#00ff00;
-    font-family:'Courier New', monospace;
-    margin:0;
-    line-height:0.8em;
-    text-align:center;
-}
-
-header .subtitle {
-    color:#ffffff;
+    color:white;
     font-size:1.2em;
-    margin-top:4px;
+    font-weight:bold;
 }
 
 nav {
     width:280px;
     background:#1f1f1f;
-    padding-top:130px;
+    padding-top:70px;
     position:fixed;
     height:100%;
     overflow-y:auto;
@@ -92,7 +80,7 @@ nav button.active {
 
 main {
     margin-left:280px;
-    padding:140px 30px 30px 30px;
+    padding:80px 30px 30px 30px;
     overflow-y:auto;
     flex:1;
     scroll-behavior:smooth;
@@ -122,17 +110,7 @@ main {
 </head>
 <body>
 
-<header>
-<pre>
-████████╗ ██████╗ ██████╗  █████╗
-╚══██╔══╝██╔═══██╗██╔══██╗██╔══██╗
-   ██║   ██║   ██║██████╔╝███████║
-   ██║   ██║   ██║██╔═══╝ ██╔══██║
-   ██║   ╚██████╔╝██║     ██║  ██║
-   ╚═╝    ╚═════╝ ╚═╝     ╚═╝  ╚═╝
-</pre>
-<div class="subtitle">Treetops Cryptid Containment Archives</div>
-</header>
+<header>Treetops Cryptid Containment Archives</header>
 
 <nav>
 <h2>Archives</h2>
@@ -146,10 +124,16 @@ main {
 <button onclick="showPage('TA731920')" id="btn-TA731920">TA-731920</button>
 <button onclick="showPage('TA119384')" id="btn-TA119384">TA-119384</button>
 <button onclick="showPage('TA555555')" id="btn-TA555555">TA-555555</button>
+<button onclick="showPage('TA666666')" id="btn-TA666666">TA-666666</button>
+<button onclick="showPage('TA777777')" id="btn-TA777777">TA-777777</button>
+<button onclick="showPage('TA888888')" id="btn-TA888888">TA-888888</button>
+<button onclick="showPage('TA999999')" id="btn-TA999999">TA-999999</button>
+<button onclick="showPage('TA111111')" id="btn-TA111111">TA-111111</button>
+<button onclick="showPage('TA123456')" id="btn-TA123456">TA-123456</button>
 </nav>
 
 <main>
-<!-- Safe Example -->
+<!-- TA-38282 -->
 <div id="TA38282" class="page">
   <div class="section"><div class="section-title">DESIGNATION</div>TA-38282</div>
   <div class="section"><div class="section-title">CLASS</div>S (Safe)</div>
@@ -163,19 +147,64 @@ main {
   <div class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices causing minor flickers.</div>
 </div>
 
-<!-- Ketemmu Example -->
+<!-- TA-2839237 -->
+<div id="TA2839237" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-2839237</div>
+  <div class="section"><div class="section-title">CLASS</div>Mettia</div>
+  <div class="section"><div class="section-title">SUBCATEGORY</div>Keria</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Shard Maw</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Abandoned mine; crystal-based entity.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Jagged crystalline body; constantly regenerates new shards.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Aggressive; hunts in tunnels and shadows.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Lacerations, disorientation, anxiety spikes.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Reinforced chamber; infrared monitoring.</div>
+  <div class="section"><div class="section-title">NOTES</div>Shards regenerate quickly; caution required during breach.</div>
+</div>
+
+<!-- TA-101838 -->
+<div id="TA101838" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-101838</div>
+  <div class="section"><div class="section-title">CLASS</div>Ketemmu</div>
+  <div class="section"><div class="section-title">SUBCATEGORY</div>Dremmat</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Living Fog</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Urban smog events; partially visible in infrared.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Amorphous fog with humanoid hints.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Drifts through areas; absorbs sound; avoids light.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Disorientation, auditory hallucinations, fainting.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Negative pressure chambers; chemical dispersion; monitoring only.</div>
+  <div class="section"><div class="section-title">NOTES</div>Highly adaptive; changes density based on environment.</div>
+</div>
+
+<!-- TA-984302 -->
+<div id="TA984302" class="page">
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-984302</div>
+  <div class="section"><div class="section-title">CLASS</div>S (Safe)</div>
+  <div class="section"><div class="section-title">SUBCATEGORY</div>—</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Clocking Doll</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Found in antique shop; mimics human gestures.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small humanoid doll; joints click; eyes follow movement.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Idle when observed; moves unpredictably when alone.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Mild discomfort; fascination; rare nightmares.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Glass case; avoid prolonged observation.</div>
+  <div class="section"><div class="section-title">NOTES</div>Records subtle motions; potential study in motion patterns.</div>
+</div>
+
+<!-- TA-119384 Imprisoned God / Harbinger -->
 <div id="TA119384" class="page">
   <div class="section"><div class="section-title">DESIGNATION</div>TA-119384</div>
   <div class="section"><div class="section-title">CLASS</div>Memmu</div>
   <div class="section"><div class="section-title">SUBCATEGORY</div>—</div>
   <div class="section"><div class="section-title">ALIASES</div>The Imprisoned God / The Harbinger</div>
-  <div class="section"><div class="section-title">ORIGIN</div>Contained within Pandora's Box; event known as "The Rapture" will occur when containment fails.</div>
-  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Vast, shadowy humanoid; constantly shifting form; overwhelming energy detectable only indirectly.</div>
-  <div class="section"><div class="section-title">BEHAVIOR</div>Dormant. 100 days before release, automated warning system "The Harbinger" activates.</div>
-  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Psychosis, existential terror, cognitive disruption; all forms of religion are cognitohazard vectors.</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Contained within Pandora's Box; triggers "Rapture" event when released.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Vast shadowy humanoid; constantly shifting form; extreme energy output.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Dormant; 100 days before Rapture, automated warning system "The Harbinger" activates.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Psychosis, terror, cognitive disruption; all forms of religion are cognitohazard vectors.</div>
   <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Multi-dimensional reinforced containment; no human approach; monitored remotely.</div>
-  <div class="section"><div class="section-title">NOTES</div>Existential threat; eventual Rapture considered inevitable.</div>
+  <div class="section"><div class="section-title">NOTES</div>Existential threat; Rapture considered inevitable.</div>
 </div>
+
+<!-- Additional TCCA entries TA-555555, TA-666666, TA-777777, TA-888888, TA-999999, TA-111111, TA-123456 -->
+<!-- Fill these similarly with unique IDs, class/subcategory, aliases, origin, behavior, effects, containment, notes -->
 
 </main>
 
