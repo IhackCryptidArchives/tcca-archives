@@ -5,43 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TCCA Archives</title>
 <style>
-  /* Reset & base */
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family: 'Segoe UI', Tahoma, sans-serif; display:flex; background:#121212; color:#eee; height:100vh; overflow:hidden; }
-  
-  /* Top header */
-  header { position: fixed; top:0; left:0; width:100%; height:60px; background:linear-gradient(90deg,#800000,#a00000); 
-           display:flex; align-items:center; justify-content:center; font-size:1.8em; font-weight:bold; color:#fff; z-index:100; box-shadow:0 3px 6px rgba(0,0,0,0.5); }
-  
-  /* Sidebar */
-  nav { width:250px; background:#1f1f1f; padding-top:70px; position:fixed; height:100%; overflow-y:auto; border-right:1px solid #333; }
-  nav h2 { text-align:center; font-size:1.3em; padding-bottom:10px; border-bottom:1px solid #555; margin-bottom:10px; color:#fff; }
-  nav button { display:block; width:90%; margin:5px auto; padding:10px; border:none; background:#2c2c2c; color:#eee; text-align:left; font-size:0.95em; border-radius:4px; cursor:pointer; transition:0.2s; }
-  nav button:hover { background:#444; }
-  nav button.active { background:#800000; color:#fff; font-weight:bold; }
+body { margin:0; font-family:'Segoe UI',sans-serif; display:flex; background:#121212; color:#eee; height:100vh; overflow:hidden; }
+header { position: fixed; top:0; left:0; width:100%; height:60px; background:linear-gradient(90deg,#800000,#a00000); display:flex; align-items:center; justify-content:center; font-size:1.8em; font-weight:bold; color:#fff; z-index:100; box-shadow:0 3px 6px rgba(0,0,0,0.5); }
+nav { width:250px; background:#1f1f1f; padding-top:70px; position:fixed; height:100%; overflow-y:auto; border-right:1px solid #333; }
+nav h2 { text-align:center; font-size:1.3em; padding-bottom:10px; border-bottom:1px solid #555; margin-bottom:10px; color:#fff; }
+nav button { display:block; width:90%; margin:5px auto; padding:10px; border:none; background:#2c2c2c; color:#eee; text-align:left; font-size:0.95em; border-radius:4px; cursor:pointer; transition:0.2s; }
+nav button:hover { background:#444; }
+nav button.active { background:#800000; color:#fff; font-weight:bold; }
+main { margin-left:250px; padding:80px 30px 30px 30px; overflow-y:auto; flex:1; scroll-behavior:smooth; position:relative; }
 
-  /* Main content */
-  main { margin-left:250px; padding:80px 30px 30px 30px; overflow-y:auto; flex:1; scroll-behavior:smooth; }
-  .page { display:none; animation: fadeIn 0.3s ease-in; }
-  .page.active { display:block; }
-  @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+.page { display:none; animation: fadeIn 0.3s ease-in; }
+.page.active { display:block; }
 
-  /* Sections */
-  .section { margin-bottom:16px; padding-bottom:4px; border-bottom:1px solid #333; }
-  .section-title { font-weight:bold; font-size:1.05em; color:#f5f5f5; margin-bottom:4px; }
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
 
-  /* Redacted text */
-  .redacted { background-color:#000; color:#000; cursor:pointer; padding:0 3px; border-radius:2px; }
-  .redacted.revealed { color:#eee; background:none; }
+.section { margin-bottom:16px; padding-bottom:4px; border-bottom:1px solid #333; }
+.section-title { font-weight:bold; font-size:1.05em; color:#f5f5f5; margin-bottom:4px; }
+.redacted { background-color:#000; color:#000; cursor:pointer; padding:0 3px; border-radius:2px; }
+.redacted.revealed { color:#eee; background:none; }
 
-  /* Dangerous TAs */
-  .dangerous { animation: glow 2s infinite alternate; }
-  @keyframes glow { 0% { box-shadow:0 0 0 #800000; } 50% { box-shadow:0 0 12px #800000; } 100% { box-shadow:0 0 0 #800000; } }
+.dangerous { animation: glow 2s infinite alternate; }
+@keyframes glow { 0% { box-shadow:0 0 0 #800000; } 50% { box-shadow:0 0 12px #800000; } 100% { box-shadow:0 0 0 #800000; } }
 
-  /* Subsection nav */
-  .subsections { position: sticky; top:70px; margin-bottom:10px; }
-  .subsections button { display:inline-block; margin:2px; padding:4px 6px; font-size:0.8em; border-radius:3px; background:#333; border:none; cursor:pointer; color:#eee; transition:0.2s; }
-  .subsections button:hover { background:#555; }
+.moving-text { position: fixed; top:80px; left:300px; right:30px; font-size:1em; color:#eee; opacity:0.6; pointer-events:none; transition:transform 0.2s ease-out; z-index:10; }
 </style>
 </head>
 <body>
@@ -63,32 +49,30 @@
 
 <main>
 
-<!-- Example TA page -->
+<!-- TA-38282 FULL TEXT -->
 <div id="TA38282" class="page">
-  <div class="subsections">
-    <button onclick="scrollToSection(this,'designation-38282')">Designation</button>
-    <button onclick="scrollToSection(this,'class-38282')">Class</button>
-    <button onclick="scrollToSection(this,'aliases-38282')">Aliases</button>
-    <button onclick="scrollToSection(this,'origin-38282')">Origin</button>
-    <button onclick="scrollToSection(this,'physical-38282')">Physical</button>
-    <button onclick="scrollToSection(this,'behavior-38282')">Behavior</button>
-    <button onclick="scrollToSection(this,'effects-38282')">Effects</button>
-    <button onclick="scrollToSection(this,'containment-38282')">Containment</button>
-    <button onclick="scrollToSection(this,'notes-38282')">Notes</button>
-  </div>
-
-  <div id="designation-38282" class="section"><div class="section-title">DESIGNATION</div>TA-38282</div>
-  <div id="class-38282" class="section"><div class="section-title">CLASS</div>Safe</div>
-  <div id="aliases-38282" class="section"><div class="section-title">ALIASES</div>The Whispering Lantern</div>
-  <div id="origin-38282" class="section"><div class="section-title">ORIGIN</div>Discovered in <span class="redacted">███████</span> forest ruins; emits soft, unintelligible whispers.</div>
-  <div id="physical-38282" class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small lantern-shaped entity; glows faint green; floats silently in air.</div>
-  <div id="behavior-38282" class="section"><div class="section-title">BEHAVIOR</div>Follows humans slowly; disappears when approached.</div>
-  <div id="effects-38282" class="section"><div class="section-title">EFFECTS ON HUMANS</div>Minor curiosity and fascination; no harm recorded.</div>
-  <div id="containment-38282" class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Contained in clear glass dome; harmless to personnel.</div>
-  <div id="notes-38282" class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices, causing minor flickers.</div>
+  <div class="section"><div class="section-title">DESIGNATION</div>TA-38282</div>
+  <div class="section"><div class="section-title">CLASS</div>Safe</div>
+  <div class="section"><div class="section-title">ALIASES</div>The Whispering Lantern</div>
+  <div class="section"><div class="section-title">ORIGIN</div>Discovered in <span class="redacted">███████</span> forest ruins; emits soft, unintelligible whispers.</div>
+  <div class="section"><div class="section-title">PHYSICAL DESCRIPTION</div>Small lantern-shaped entity; glows faint green; floats silently in air.</div>
+  <div class="section"><div class="section-title">BEHAVIOR</div>Follows humans slowly; disappears when approached.</div>
+  <div class="section"><div class="section-title">EFFECTS ON HUMANS</div>Minor curiosity and fascination; no harm recorded.</div>
+  <div class="section"><div class="section-title">CONTAINMENT PROCEDURES</div>Contained in clear glass dome; harmless to personnel.</div>
+  <div class="section"><div class="section-title">NOTES</div>Occasionally interacts with electrical devices, causing minor flickers.</div>
 </div>
 
-<!-- Repeat similar structure for all other TAs with unique IDs (TA2839237, TA101838, etc.), adding .dangerous class where needed -->
+<!-- PLACEHOLDER TAs -->
+<div id="TA2839237" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<div id="TA101838" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<div id="TA984302" class="page"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<div id="TA477592" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<div id="TA892104" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<div id="TA560193" class="page"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<div id="TA731920" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+<div id="TA119384" class="page dangerous"><div class="section"><div class="section-title">Archive Placeholder</div>No text available.</div></div>
+
+<div class="moving-text" id="movingText">[TCCA ARCHIVE: TA-38282 — Hover over sections to reveal redactions]</div>
 
 </main>
 
@@ -100,13 +84,14 @@ function showPage(id){
     document.getElementById('btn-'+id).classList.add('active');
 }
 
-// Scroll to subsection
-function scrollToSection(btn, sectionId){
-    document.getElementById(sectionId).scrollIntoView({behavior:'smooth', block:'start'});
-}
-
-// Redacted toggle
+// Redacted click-to-reveal
 document.querySelectorAll('.redacted').forEach(r=>r.addEventListener('click',()=>r.classList.toggle('revealed')));
+
+// Moving text follows scroll
+const movingText = document.getElementById('movingText');
+document.querySelector('main').addEventListener('scroll', e=>{
+    movingText.style.transform = `translateY(${e.target.scrollTop}px)`;
+});
 
 // Show first TA by default
 showPage('TA38282');
